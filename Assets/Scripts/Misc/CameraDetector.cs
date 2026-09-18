@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CameraDetector : MonoBehaviour
 {
-
     public Camera camera;
     Plane[] cameraFrustum;
     Collider Collider;
@@ -19,13 +18,13 @@ public class CameraDetector : MonoBehaviour
     {
         var bounds = Collider.bounds;
         cameraFrustum = GeometryUtility.CalculateFrustumPlanes(camera);
-        if(GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
+        if (GeometryUtility.TestPlanesAABB(cameraFrustum, bounds))
         {
             photoInRange = true;
         }
         else
         {
-            photoInRange= false;
+            photoInRange = false;
         }
     }
 }
