@@ -4,23 +4,25 @@ public class Polaroid : MonoBehaviour
 {
     public GameObject photoPrefab = null;
     public MeshRenderer screenRenderer = null;
+    //public MeshRenderer screenRendererTwo = null;
     public Transform spawnLocation = null;
 
     private Camera renderCamera = null;
 
-    public CameraDetector detector;
-    public CameraDetectorTwo detectorTwo;
-    public CameraDetectorThree detectorThree;
+    //public CameraDetector detector;
+    //public CameraDetectorTwo detectorTwo;
+    //public CameraDetectorThree detectorThree;
 
     private void Awake()
     {
         renderCamera = GetComponentInChildren<Camera>();
+        renderCamera.enabled = true;
     }
 
     private void Start()
     {
         CreateRenderTexture();
-        TurnOff();
+        //TurnOff();
     }
 
     private void CreateRenderTexture()
@@ -30,6 +32,7 @@ public class Polaroid : MonoBehaviour
 
         renderCamera.targetTexture = newTexture;
         screenRenderer.material.mainTexture = newTexture;
+        //screenRendererTwo.material.mainTexture = newTexture;
     }
 
     public void TakePhoto()
@@ -41,9 +44,9 @@ public class Polaroid : MonoBehaviour
     private Photo CreatePhoto()
     {
         GameObject photoObject = Instantiate(photoPrefab, spawnLocation.position, spawnLocation.rotation, transform);
-        if (detector.photoInRange == true) { photoObject.tag = "MemoryFotoOne"; }
-        if (detectorTwo.photoInRange == true) { photoObject.tag = "MemoryFotoTwo"; }
-        if (detectorThree.photoInRange == true) { photoObject.tag = "MemoryFotoThree"; }
+        //if (detector.photoInRange == true) { photoObject.tag = "MemoryFotoOne"; }
+        //if (detectorTwo.photoInRange == true) { photoObject.tag = "MemoryFotoTwo"; }
+        //if (detectorThree.photoInRange == true) { photoObject.tag = "MemoryFotoThree"; }
         return photoObject.GetComponent<Photo>();
     }
 
@@ -65,15 +68,17 @@ public class Polaroid : MonoBehaviour
         return photo;
     }
 
-    public void TurnOn()
-    {
-        renderCamera.enabled = true;
-        screenRenderer.material.color = Color.white;
-    }
+    //public void TurnOn()
+    //{
+    //    renderCamera.enabled = true;
+    //    screenRenderer.material.color = Color.white;
+    //    //screenRendererTwo.material.color = Color.white;
+    //}
 
-    public void TurnOff()
-    {
-        renderCamera.enabled = false;
-        screenRenderer.material.color = Color.black;
-    }
+    //public void TurnOff()
+    //{
+    //    renderCamera.enabled = false;
+    //    screenRenderer.material.color = Color.black;
+    //    //screenRendererTwo.material.color = Color.black;
+    //}
 }
