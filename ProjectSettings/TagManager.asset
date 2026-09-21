@@ -18,8 +18,8 @@ TagManager:
   - LeftHandPhysics
   - RightHandPhysics
   - MemoryPlayer
-  - 
-  - 
+  - wall
+  - monster
   - 
   - 
   - 
