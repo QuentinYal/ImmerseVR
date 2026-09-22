@@ -1535,6 +1535,41 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &632335308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632335294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af7763e0299ee24d9793e2b0e8bb6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &632335309
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632335294}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.29399073
+  m_Height: 1.4150381
+  m_Direction: 1
+  m_Center: {x: -0.029381335, y: 0.6797832, z: 2.6555224e-17}
 --- !u!1 &669723936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,7 +2178,7 @@ GameObject:
   - component: {fileID: 1109921063}
   m_Layer: 10
   m_Name: monster
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2307,7 +2342,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2496,6 +2531,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5971809753051674258, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7084629896535892033, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_TargetDisplay
       value: 1
@@ -2511,6 +2550,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5971809753051674258, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 632335301}
+    - targetCorrespondingSourceObject: {fileID: 5971809753051674258, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 632335309}
+    - targetCorrespondingSourceObject: {fileID: 5971809753051674258, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 632335308}
   m_SourcePrefab: {fileID: 100100000, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
 --- !u!1 &1177395541
 GameObject:
