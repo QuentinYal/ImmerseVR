@@ -5979,7 +5979,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8958662244137072, guid: f2141d4229b141545b00019c5632f3f8, type: 3}
       propertyPath: m_TargetDisplay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3547966389603527981, guid: f2141d4229b141545b00019c5632f3f8, type: 3}
       propertyPath: m_Name
@@ -7292,7 +7292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7084629896535892033, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_TargetDisplay
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
