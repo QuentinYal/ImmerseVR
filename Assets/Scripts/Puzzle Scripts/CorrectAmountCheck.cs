@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonManager : MonoBehaviour
+public class CorrectAumoutCheck : MonoBehaviour
 {
     public int buttonsCorrect;
     public List<PuzzleReqs> puzzleReqsList = new List<PuzzleReqs>();
