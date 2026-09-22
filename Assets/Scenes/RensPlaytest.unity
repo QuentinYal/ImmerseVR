@@ -2769,6 +2769,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2381355162313554994, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
+      propertyPath: puzzleReqsList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381355162313554994, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
+      propertyPath: 'puzzleReqsList.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1424665555}
+    - target: {fileID: 2381355162313554994, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
+      propertyPath: 'puzzleReqsList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1959941399}
     - target: {fileID: 6412401837847629966, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
       propertyPath: m_Name
       value: Puzzle 1
@@ -2852,6 +2864,10 @@ PrefabInstance:
     - target: {fileID: 7436067541166965559, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742408844280337820, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4876,11 +4892,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e1773a8a58221645b8aa5edf1cebc23, type: 3}
---- !u!1 &950975137 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6528268694359468622, guid: 87d1e908fd67a72469bbd857d4b76a1b, type: 3}
-  m_PrefabInstance: {fileID: 926783131}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &959580474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8198,6 +8209,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422599612}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1424665555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8388356770287216378, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
+  m_PrefabInstance: {fileID: 569107934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73a0f725c9a17b4f949dba0ace88b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1487471755
 GameObject:
   m_ObjectHideFlags: 0
@@ -10087,6 +10109,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952092051}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1959941399 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1801132817918766800, guid: 2c792b7d3c4f46844bf055682f486853, type: 3}
+  m_PrefabInstance: {fileID: 569107934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73a0f725c9a17b4f949dba0ace88b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1964933105
 GameObject:
   m_ObjectHideFlags: 0
@@ -10880,7 +10913,7 @@ MonoBehaviour:
   randomRadius: 40
   lingerRadius: 7
   distanceForLinger: 18
-  player: {fileID: 950975137}
+  player: {fileID: 1157613502}
   blockingLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -11211,13 +11244,41 @@ GameObject:
   - component: {fileID: 5216826670657809007}
   - component: {fileID: 789154686833849454}
   - component: {fileID: 5330764233668158317}
+  - component: {fileID: 8172416659777729394}
   m_Layer: 10
   m_Name: monster
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &8172416659777729394
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172416659777729393}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &8859232846942068560
 MonoBehaviour:
   m_ObjectHideFlags: 0
