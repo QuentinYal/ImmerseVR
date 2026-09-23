@@ -6912,7 +6912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1128872366
 Transform:
   m_ObjectHideFlags: 0
@@ -8966,6 +8966,7 @@ MonoBehaviour:
   cam5: {fileID: 450946640}
   cam6: {fileID: 450946640}
   cam7: {fileID: 450946640}
+  cam8: {fileID: 0}
 --- !u!1 &1412858239
 GameObject:
   m_ObjectHideFlags: 0
