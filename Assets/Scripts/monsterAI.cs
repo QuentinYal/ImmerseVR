@@ -7,6 +7,7 @@ public class monsterAI : MonoBehaviour
     public NavMeshAgent agent;
     public float randomRadius;
     public float lingerRadius;
+    public float distanceForLinger;
     private float radius;
     public GameObject player;
     public LayerMask blockingLayer;
@@ -57,7 +58,7 @@ public class monsterAI : MonoBehaviour
                 StartCoroutine(Linger());
             agent.SetDestination(GetRandomPos());
             Debug.Log(Vector3.Distance(transform.position, agent.destination));
-            if (Vector3.Distance(transform.position, agent.destination) > 31f)
+            if (Vector3.Distance(transform.position, agent.destination) > distanceForLinger)
             {
                 gonnaLinger = true;
             }
