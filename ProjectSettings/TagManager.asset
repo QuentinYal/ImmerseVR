@@ -9,6 +9,9 @@ TagManager:
   - MemoryFotoTwo
   - MemoryFotoThree
   - monster
+  - RedBall
+  - GreenBall
+  - BlueBall
   layers:
   - Default
   - TransparentFX
