@@ -12,6 +12,7 @@ TagManager:
   - RedBall
   - GreenBall
   - BlueBall
+  - Button
   layers:
   - Default
   - TransparentFX
