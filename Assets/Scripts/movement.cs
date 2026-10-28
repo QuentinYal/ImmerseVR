@@ -70,10 +70,10 @@ public class movement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("type shi");
+        /*Debug.Log("type shi");
         if (collision.gameObject.layer == LayerMask.NameToLayer("monster"))
         {
             SceneManager.LoadScene("lose");
-        }
+        }*/
     }
 }
