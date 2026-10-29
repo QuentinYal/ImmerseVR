@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1140051372279625477}
   - component: {fileID: 769148782872360136}
   - component: {fileID: 3746186199682039205}
+  - component: {fileID: 812336020144170768}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -49,9 +50,9 @@ MonoBehaviour:
   correctCombination:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3746186199682039205}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: SceneChange
+      - m_Target: {fileID: 812336020144170768}
+        m_TargetAssemblyTypeName: ChangeColor, Assembly-CSharp
+        m_MethodName: ColorChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -73,3 +74,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b8ba7078445664b8e11d4a4568b4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &812336020144170768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229431942508786393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1b69c7f22c43048a7643113ecb0e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicator: {fileID: 0}
