@@ -3,9 +3,11 @@ using UnityEngine.UI;
 
 public class SubmitUI : MonoBehaviour
 {
+    public int amountCheck;
     public Button submitButton;
     public Image colorChange;
     public CorrectAumoutCheck correctAmount;
+
 
     void Start()
     {
@@ -15,7 +17,7 @@ public class SubmitUI : MonoBehaviour
 
     void submitButtonClicked()
     {
-        if (correctAmount.buttonsCorrect == 64)
+        if (correctAmount.buttonsCorrect == amountCheck)
         {
             colorChange.color = new Color32(185, 255, 200, 255); //green
         }
