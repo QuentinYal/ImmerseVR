@@ -21,6 +21,8 @@ public class ButtonScript : MonoBehaviour
     {
         if(other.tag == "Button" && !_deadTimeActive)
         {
+            Debug.Log("It works");
+            buttonSequence.Press(buttonID);
             onPressed?.Invoke();
         }
     }
@@ -29,7 +31,6 @@ public class ButtonScript : MonoBehaviour
     {
         if(other.tag == "Button" && !_deadTimeActive)
         {
-            buttonSequence.Press(buttonID);
             onReleased?.Invoke();
             StartCoroutine(WaitForDeadTime());
         }
