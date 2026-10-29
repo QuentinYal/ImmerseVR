@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ButtonScript : MonoBehaviour
+public class ButtonSequenceScript : MonoBehaviour
 {
 
     [SerializeField]
