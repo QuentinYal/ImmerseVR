@@ -1,10 +1,14 @@
 using UnityEngine;
 using System.Linq;
+using TMPro;
 
 public class monsterDetector : MonoBehaviour
 {
     public GameObject monster;
-    public Camera cam;
+    private Camera cam;
+    public LayerMask wall;
+    public TextMeshProUGUI text;
+
 
     private bool canSee;
 
@@ -17,13 +21,13 @@ public class monsterDetector : MonoBehaviour
     void Update()
     {
         Debug.DrawLine(transform.position, monster.transform.position);
-        canSee = !Physics.Linecast(transform.position, monster.transform.position, LayerMask.NameToLayer("wall"));
+        canSee = !Physics.Linecast(transform.position, monster.transform.position, wall);
 
         if (canSee)
         {
-            Debug.Log(gameObject.name + " detecting");
-        } 
+            text.enabled = true;
+        }
+        else text.enabled = false;
     }
 
-   
 }

@@ -169,7 +169,7 @@ public class camManager : MonoBehaviour
             cam9.depth = 0;
             cam10.depth = 1;
         }
-        text.text = "cam " + index;
+        text.text = "CAM " + index;
 
     }
 }
