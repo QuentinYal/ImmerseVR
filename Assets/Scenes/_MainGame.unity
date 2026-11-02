@@ -23445,7 +23445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -55708,7 +55707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -118217,7 +118215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -124481,7 +124478,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -155173,7 +155169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -167336,7 +167331,7 @@ PrefabInstance:
       addedObject: {fileID: 1302917299}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1302917300}
+      addedObject: {fileID: 1302917302}
   m_SourcePrefab: {fileID: 100100000, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
 --- !u!1 &1302917297 stripped
 GameObject:
@@ -167386,7 +167381,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1302917300
+--- !u!114 &1302917302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167395,7 +167390,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1302917297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e97173b6d2ea74b886026411bb3720, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ef222f2fa4c7e54a8a7d947d5eff96e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 1302917299}
@@ -167404,11 +167399,11 @@ MonoBehaviour:
   blockingLayer:
     serializedVersion: 2
     m_Bits: 512
-  normalSpeed: 4
-  huntingSpeed: 7
+  normalSpeed: 5
+  huntingSpeed: 10
   lingerSpeed: 2
   lingering: 0
-  chaseTime: 5
+  chaseTime: 6
   chasing: 0
   minLingerTime: 25
   maxLingerTime: 35
@@ -174051,7 +174046,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -179587,7 +179581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -198193,7 +198186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
@@ -236767,7 +236759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 1302917297}
-  cam: {fileID: 0}
   wall:
     serializedVersion: 2
     m_Bits: 512
