@@ -23211,13 +23211,14 @@ GameObject:
   - component: {fileID: 192778640}
   - component: {fileID: 192778639}
   - component: {fileID: 192778638}
+  - component: {fileID: 192778641}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &192778637
 Transform:
   m_ObjectHideFlags: 0
@@ -23431,6 +23432,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &192778641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192778636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!1001 &192873888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34358,7 +34373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 778848332037785620, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2972343767888712631, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: xrRendering
@@ -55319,13 +55334,14 @@ GameObject:
   - component: {fileID: 421913202}
   - component: {fileID: 421913201}
   - component: {fileID: 421913200}
+  - component: {fileID: 421913203}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &421913199
 Transform:
   m_ObjectHideFlags: 0
@@ -55539,6 +55555,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &421913203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421913198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!4 &421915719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6515278719126764238, guid: 948e9c1300e4bba44815c05039dff2f9, type: 3}
@@ -117374,13 +117404,14 @@ GameObject:
   - component: {fileID: 939859820}
   - component: {fileID: 939859819}
   - component: {fileID: 939859818}
+  - component: {fileID: 939859821}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &939859817
 Transform:
   m_ObjectHideFlags: 0
@@ -117594,6 +117625,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &939859821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939859816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!4 &939918585 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2656111282709170607, guid: b9071954dcffa3447b97ab5a82640dc8, type: 3}
@@ -123575,6 +123620,7 @@ GameObject:
   - component: {fileID: 982257408}
   - component: {fileID: 982257407}
   - component: {fileID: 982257410}
+  - component: {fileID: 982257411}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -123839,6 +123885,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &982257411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982257405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!4 &982571502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6515278719126764238, guid: 948e9c1300e4bba44815c05039dff2f9, type: 3}
@@ -153919,13 +153979,14 @@ GameObject:
   - component: {fileID: 1214251687}
   - component: {fileID: 1214251686}
   - component: {fileID: 1214251685}
+  - component: {fileID: 1214251688}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1214251684
 Transform:
   m_ObjectHideFlags: 0
@@ -154139,6 +154200,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1214251688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214251683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!1 &1214622302
 GameObject:
   m_ObjectHideFlags: 0
@@ -156248,16 +156323,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c179c0a9df4934b8ebd96558b03bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam1: {fileID: 982257405}
-  cam2: {fileID: 421913198}
-  cam3: {fileID: 1214251683}
-  cam4: {fileID: 1832627306}
-  cam5: {fileID: 939859816}
-  cam6: {fileID: 1394046103}
-  cam7: {fileID: 192778636}
-  cam8: {fileID: 1529747073}
-  cam9: {fileID: 1350931308}
-  cam10: {fileID: 1646406426}
+  cam1: {fileID: 982257409}
+  cam2: {fileID: 421913202}
+  cam3: {fileID: 1214251687}
+  cam4: {fileID: 1832627310}
+  cam5: {fileID: 939859820}
+  cam6: {fileID: 1394046107}
+  cam7: {fileID: 192778640}
+  cam8: {fileID: 1529747077}
+  cam9: {fileID: 1350931312}
+  cam10: {fileID: 1646406430}
   text: {fileID: 2042203138}
 --- !u!1001 &1228523879
 PrefabInstance:
@@ -172778,13 +172853,14 @@ GameObject:
   - component: {fileID: 1350931312}
   - component: {fileID: 1350931311}
   - component: {fileID: 1350931310}
+  - component: {fileID: 1350931313}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1350931309
 Transform:
   m_ObjectHideFlags: 0
@@ -172998,6 +173074,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1350931313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350931308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!1001 &1351175206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -178295,13 +178385,14 @@ GameObject:
   - component: {fileID: 1394046107}
   - component: {fileID: 1394046106}
   - component: {fileID: 1394046105}
+  - component: {fileID: 1394046108}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1394046104
 Transform:
   m_ObjectHideFlags: 0
@@ -178515,6 +178606,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1394046108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394046103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!4 &1394388920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6515278719126764238, guid: 948e9c1300e4bba44815c05039dff2f9, type: 3}
@@ -196882,13 +196987,14 @@ GameObject:
   - component: {fileID: 1529747077}
   - component: {fileID: 1529747076}
   - component: {fileID: 1529747075}
+  - component: {fileID: 1529747078}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1529747074
 Transform:
   m_ObjectHideFlags: 0
@@ -197102,6 +197208,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1529747078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529747073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!4 &1529811457 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6515278719126764238, guid: 948e9c1300e4bba44815c05039dff2f9, type: 3}
@@ -211151,9 +211271,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9071954dcffa3447b97ab5a82640dc8, type: 3}
---- !u!1 &1646406426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 778848332037785620, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
+--- !u!20 &1646406430 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3662361654840408291, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
   m_PrefabInstance: {fileID: 274263726}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1647328248
@@ -235163,13 +235283,14 @@ GameObject:
   - component: {fileID: 1832627310}
   - component: {fileID: 1832627309}
   - component: {fileID: 1832627308}
+  - component: {fileID: 1832627311}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1832627307
 Transform:
   m_ObjectHideFlags: 0
@@ -235383,6 +235504,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1832627311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832627306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a092d1811a43c4d9814c7b2abb76d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monster: {fileID: 1302917297}
+  cam: {fileID: 0}
 --- !u!1 &1832889273
 GameObject:
   m_ObjectHideFlags: 0
