@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class camManager : MonoBehaviour
@@ -11,6 +12,8 @@ public class camManager : MonoBehaviour
     public GameObject cam7;
     public GameObject cam8;
     public GameObject cam9;
+
+    public TextMeshProUGUI text;
 
     private int index;
     
@@ -142,5 +145,7 @@ public class camManager : MonoBehaviour
             cam8.SetActive(false);
             cam9.SetActive(true);
         }
+        text.text = "cam " + index;
+
     }
 }
