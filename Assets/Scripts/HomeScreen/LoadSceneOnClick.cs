@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class LoadSceneOnClick : MonoBehaviour, IPointerClickHandler
+public class LoadSceneOnClick : MonoBehaviour
 {
     public string sceneName;
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick()
     {
         SceneManager.LoadScene(sceneName);
     }
