@@ -26186,10 +26186,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 613651445506235766, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 73ea966c61ab07d4096678a9c917427f, type: 2}
+    - target: {fileID: 1055330610494677712, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 73ea966c61ab07d4096678a9c917427f, type: 2}
+    - target: {fileID: 2605531291599018267, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 73ea966c61ab07d4096678a9c917427f, type: 2}
     - target: {fileID: 4310148603093078555, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
       propertyPath: m_Name
       value: ButtonPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 4972870861426219249, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 73ea966c61ab07d4096678a9c917427f, type: 2}
+    - target: {fileID: 5533272572172384531, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 73ea966c61ab07d4096678a9c917427f, type: 2}
     - target: {fileID: 8039790715292356518, guid: 8ef60962c6ebabb4b90d6ad0e42f49d9, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
