@@ -852,7 +852,7 @@ GameObject:
   - component: {fileID: 1463475774550845566}
   - component: {fileID: 6920444598274035610}
   - component: {fileID: 4701689771452021870}
-  - component: {fileID: 5382600897897914381}
+  - component: {fileID: 1351250189506826337}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -917,7 +917,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 0
@@ -1079,7 +1079,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &5382600897897914381
+--- !u!114 &1351250189506826337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1834,7 +1834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8163242118302225916
 Transform:
   m_ObjectHideFlags: 0
@@ -4114,6 +4114,7 @@ GameObject:
   - component: {fileID: 1358548186311910794}
   - component: {fileID: 554270700651460708}
   - component: {fileID: 4279464439332005864}
+  - component: {fileID: 3498853712960871377}
   m_Layer: 2
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -4290,9 +4291,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.29399073
-  m_Height: 1.4150381
+  m_Height: 1.2672545
   m_Direction: 1
-  m_Center: {x: -0.029381335, y: 0.6797832, z: 2.6555224e-17}
+  m_Center: {x: -0.029381335, y: 0.6901906, z: 2.6555224e-17}
 --- !u!114 &4279464439332005864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4303,6 +4304,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4af7763e0299ee24d9793e2b0e8bb6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3498853712960871377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971809753051674258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f8e21d831ac2f48bce5705d0604728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6095098598332570925
@@ -4581,7 +4594,7 @@ MonoBehaviour:
   m_ManipulationXAxisMode: 1
   m_ManipulationYAxisMode: 2
   m_CombineManipulationAxes: 0
-  m_ManipulationTranslateSpeed: 1
+  m_ManipulationTranslateSpeed: 0
   m_ManipulationRotateSpeed: 180
   m_ManipulationRotateReferenceFrame: {fileID: 0}
   m_EnableDebugLines: 0
@@ -4881,8 +4894,8 @@ MonoBehaviour:
   m_Move: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_UIScroll: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SmoothMotionEnabled: 0
-  m_SmoothTurnEnabled: 0
-  m_NearFarEnableTeleportDuringNearInteraction: 1
+  m_SmoothTurnEnabled: 1
+  m_NearFarEnableTeleportDuringNearInteraction: 0
   m_UIScrollingEnabled: 1
   m_RayInteractorChanged:
     m_PersistentCalls:
@@ -6696,6 +6709,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8350836956578110893, guid: 3c99d0ba506360a43b8cea08ef805d25, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3338dde1ae80a3b43826deca5c238356, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
