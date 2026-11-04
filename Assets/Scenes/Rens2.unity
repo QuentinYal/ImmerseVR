@@ -188053,12 +188053,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.76643366, y: 2.453976, z: 0.7081005}
-  m_Center: {x: 0.11225604, y: 1.2438849, z: 0.08367165}
+  m_Center: {x: 0.11225604, y: 0.79, z: 0.08367165}
 --- !u!195 &1302917299
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -225926,6 +225926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceCamera: 0
   rotationSpeed: 5
+  pivotHeight: 1.5
   targetMonster: {fileID: 1302917300}
   cameraNormal: {fileID: 7084629895407314940}
   cameraDeath: {fileID: 2028557598}

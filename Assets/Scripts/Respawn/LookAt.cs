@@ -5,6 +5,7 @@ public class LookAt : MonoBehaviour
 
     public bool forceCamera = false;
     public float rotationSpeed = 5f;
+    public float pivotHeight = 1.5f;
 
     public Transform targetMonster;
 
@@ -16,13 +17,15 @@ public class LookAt : MonoBehaviour
 
     void Update()
     {
+        Vector3 adjustedTargetMonster = new Vector3(targetMonster.position.x, cameraDeathTransform.position.y + pivotHeight, targetMonster.position.z);
+
 
         if (forceCamera)
         {
             cameraNormal.enabled = false;
             cameraDeath.enabled = true;
 
-            Vector3 direction = targetMonster.position - cameraDeathTransform.position;
+            var direction = adjustedTargetMonster - cameraDeathTransform.position;
             Quaternion targetRotation = Quaternion.LookRotation(direction);
 
             cameraDeathTransform.transform.rotation = Quaternion.Slerp(

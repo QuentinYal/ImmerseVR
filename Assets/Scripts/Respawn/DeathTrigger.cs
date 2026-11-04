@@ -7,6 +7,8 @@ public class DeathTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collision detected with: " + other.name);
+
         if (other.CompareTag("monster"))
         {
             deathTriggered = true;
