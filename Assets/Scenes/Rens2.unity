@@ -166551,6 +166551,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4267853496610620700, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
   m_PrefabInstance: {fileID: 1157613501}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1157613506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 587721549861400542, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+  m_PrefabInstance: {fileID: 1157613501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1157613507 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7084629896535892033, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+  m_PrefabInstance: {fileID: 1157613501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1157883617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4342125316248730876, guid: b56e5b388a9b39d4ea15d6c2114b5842, type: 3}
@@ -226419,8 +226429,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceCamera: 0
   rotationSpeed: 5
-  cameraVR: {fileID: 1157613503}
   targetMonster: {fileID: 1302917300}
+  cameraNormal: {fileID: 1157613507}
+  cameraDeath: {fileID: 2028557598}
+  cameraNormalTransform: {fileID: 1157613506}
+  cameraDeathTransform: {fileID: 2028557594}
 --- !u!114 &1548572837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226454,10 +226467,6 @@ MonoBehaviour:
   blackScreenScript: {fileID: 1548572837}
   lookAtScript: {fileID: 1548572836}
   deathTriggerScript: {fileID: 1157613504}
-  cameraNormal: {fileID: 0}
-  cameraDeath: {fileID: 0}
-  cameraNormalTransform: {fileID: 0}
-  cameraDeathTransform: {fileID: 0}
   checkPointsList:
   - checkPoints:
     - {x: -200, y: 200}
