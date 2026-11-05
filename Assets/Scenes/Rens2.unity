@@ -188052,6 +188052,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.467
       objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.49991274
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.49991274
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: 5c64b28e41efd24488dda39c0318ccb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -225959,7 +225983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceCamera: 0
   rotationSpeed: 2
-  pivotHeight: 1.5
+  pivotHeight: 1
   targetMonster: {fileID: 1302917300}
   cameraNormal: {fileID: 7084629895407314940}
   cameraDeath: {fileID: 2028557598}
