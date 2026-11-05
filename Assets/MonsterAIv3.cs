@@ -21,6 +21,12 @@ public class monsterAIv3 : MonoBehaviour
     public float minLingerTime;
     public float maxLingerTime;
     public bool canSee;
+    public float minGrowlTime; 
+    public float maxGrowlTime;
+    private float timer;
+    public AudioSource source;
+    public AudioClip growl;
+    public AudioClip detect;
 
     public GameObject[] camPositions;
 
@@ -32,15 +38,25 @@ public class monsterAIv3 : MonoBehaviour
         
         agent.speed = normalSpeed;
         StartCoroutine(wander());
+        timer = Random.Range(minGrowlTime, maxGrowlTime);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(timer <= 0)
+        {
+            source.PlayOneShot(growl);
+            timer = Random.Range(minGrowlTime, maxGrowlTime);
+        }
+        timer -= Time.deltaTime;
+        
+        
         canSee = !Physics.Linecast(transform.position, player.transform.position, blockingLayer);
 
         if(canSee && !chasing)
         {
+            source.PlayOneShot(detect);
             StopAllCoroutines();
             lingering = false;
             agent.speed = normalSpeed;

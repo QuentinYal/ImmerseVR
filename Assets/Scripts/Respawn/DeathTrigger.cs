@@ -4,6 +4,8 @@ public class DeathTrigger : MonoBehaviour
 {
     public bool deathTriggered = false;
     public float deathTimer = 0f;
+    public AudioSource source;
+    public AudioClip jumpscare;
 
     private void Update()
     {
@@ -26,6 +28,8 @@ public class DeathTrigger : MonoBehaviour
         if (other.CompareTag("monster"))
         {
             deathTriggered = true;
+            source.PlayOneShot(jumpscare);
+
         }
     }
 }

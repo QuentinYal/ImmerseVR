@@ -47,6 +47,7 @@ public class CheckpointDeath : MonoBehaviour
             }
             if (deathTimer > timeUntilRespawn)
             {
+                monsterAIv3.instance.chasing = false;
                 resetPlayerLocation();
             }
             if (deathTimer > timeUntilFadeOut)
