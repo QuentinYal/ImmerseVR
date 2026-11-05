@@ -14,6 +14,9 @@ public class slideDeur : MonoBehaviour
     public float lerpDuration;
 
     private bool inAnim;
+    public AudioSource source;
+    public AudioClip openClip;
+    public AudioClip closeClip;
 
 
     private void OnTriggerEnter(Collider other)
@@ -31,36 +34,39 @@ public class slideDeur : MonoBehaviour
 
     public IEnumerator open()
     {
+        source.Stop();
+        source.PlayOneShot(openClip);
         float timeElapsed = 0f;
 
         while(timeElapsed < lerpDuration)
         {
-            door1.transform.localPosition = new Vector3(door1.transform.localPosition.x, door1.transform.localPosition.y, Mathf.SmoothStep(door1.transform.localPosition.z, openpos1, timeElapsed / lerpDuration));
-            door2.transform.localPosition = new Vector3(door2.transform.localPosition.x, door2.transform.localPosition.y, Mathf.SmoothStep(door2.transform.localPosition.z, openpos2, timeElapsed / lerpDuration));
+            door1.transform.localPosition = new Vector3(Mathf.SmoothStep(door1.transform.localPosition.x, openpos1, timeElapsed / lerpDuration), door1.transform.localPosition.y, door1.transform.localPosition.z);
+            door2.transform.localPosition = new Vector3(Mathf.SmoothStep(door2.transform.localPosition.x, openpos2, timeElapsed / lerpDuration), door2.transform.localPosition.y, door2.transform.localPosition.z);
             timeElapsed += Time.deltaTime;
 
             yield return null;
         }
 
-        door1.transform.localPosition = new Vector3(door1.transform.localPosition.x, door1.transform.localPosition.y, openpos1);
-        door2.transform.localPosition = new Vector3(door2.transform.localPosition.x, door2.transform.localPosition.y, openpos2);
+        door1.transform.localPosition = new Vector3(openpos1, door1.transform.localPosition.y, door1.transform.localPosition.z);
+        door2.transform.localPosition = new Vector3(openpos2, door2.transform.localPosition.y, door2.transform.localPosition.z);
     }
 
     public IEnumerator close()
     {
-        
+        source.Stop();
+        source.PlayOneShot(closeClip);
         float timeElapsed = 0f;
 
         while (timeElapsed < lerpDuration)
         {
-            door1.transform.localPosition = new Vector3(door1.transform.localPosition.x, door1.transform.localPosition.y, Mathf.SmoothStep(door1.transform.localPosition.z, closedpos1, timeElapsed / lerpDuration));
-            door2.transform.localPosition = new Vector3(door2.transform.localPosition.x, door2.transform.localPosition.y, Mathf.SmoothStep(door2.transform.localPosition.z, closedpos2, timeElapsed / lerpDuration));
+            door1.transform.localPosition = new Vector3(Mathf.SmoothStep(door1.transform.localPosition.x, closedpos1, timeElapsed / lerpDuration), door1.transform.localPosition.y, door1.transform.localPosition.z);
+            door2.transform.localPosition = new Vector3(Mathf.SmoothStep(door2.transform.localPosition.x, closedpos2, timeElapsed / lerpDuration), door2.transform.localPosition.y, door2.transform.localPosition.z);
             timeElapsed += Time.deltaTime;
 
             yield return null;
         }
 
-        door1.transform.localPosition = new Vector3(door1.transform.localPosition.x, door1.transform.localPosition.y, closedpos1);
-        door2.transform.localPosition = new Vector3(door2.transform.localPosition.x, door2.transform.localPosition.y, closedpos2);
+        door1.transform.localPosition = new Vector3(closedpos1, door1.transform.localPosition.y, door1.transform.localPosition.z);
+        door2.transform.localPosition = new Vector3(closedpos2, door2.transform.localPosition.y, door2.transform.localPosition.z);
     }
 }
