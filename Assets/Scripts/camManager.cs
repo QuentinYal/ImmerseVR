@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class camManager : MonoBehaviour
 {
-    public GameObject cam1;
-    public GameObject cam2;
-    public GameObject cam3;
-    public GameObject cam4;
-    public GameObject cam5;
-    public GameObject cam6;
-    public GameObject cam7;
-    public GameObject cam8;
-    public GameObject cam9;
-    public GameObject cam10;
+    public Camera cam1;
+    public Camera cam2;
+    public Camera cam3;
+    public Camera cam4;
+    public Camera cam5;
+    public Camera cam6;
+    public Camera cam7;
+    public Camera cam8;
+    public Camera cam9;
+    public Camera cam10;
 
     public TextMeshProUGUI text;
 
@@ -40,135 +40,247 @@ public class camManager : MonoBehaviour
         
         if (index == 1 && cam1 != null)
         {
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam10.SetActive(false);
-            cam1.SetActive(true);
-            cam9.SetActive(false);
-
+            cam1.enabled = true;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+            
+            
+            /*cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam8.depth = 0;
+            cam10.depth = 0;
+            cam9.depth = 0;
+            cam1.depth = 1;*/
         }
         if (index == 2 && cam2 != null)
         {
-            cam1.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam2.SetActive(true);
-            cam9.SetActive(false);
-            cam10.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = true;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
 
+            /*cam1.depth = 0;
+            cam3.depth= 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam8.depth = 0;
+            cam7.depth = 0;
+            cam9.depth = 0;
+            cam10.depth= 0;
+            cam2.depth = 1;*/
         }
         if (index == 3 && cam3 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam3.SetActive(true);
-            cam9.SetActive(false);
-            cam10.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = true;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam4.depth= 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam8.depth = 0;
+            cam9.depth= 0;
+            cam10.depth = 0;
+            cam3.depth = 1;*/
 
         }
         if (index == 4 && cam4 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam4.SetActive(true);
-            cam10.SetActive(false);
-            cam9.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = true;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
 
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth= 0;
+            cam8.depth = 0;
+            cam10.depth = 0;
+            cam9.depth = 0;
+            cam4.depth = 1;*/
         }
         if (index == 5 && cam5 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam5.SetActive(true);
-            cam10.SetActive(false);
-            cam9.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = true;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
 
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam8.depth= 0;
+            cam10.depth = 0;
+            cam9.depth = 0;
+            cam5.depth = 1;*/
         }
         if (index == 6 && cam6 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam7.SetActive(false);
-            cam6.SetActive(true);
-            cam10.SetActive(false);
-            cam9.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = true;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
 
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam7.depth = 0;
+            cam8.depth = 0;
+            cam10.depth = 0;
+            cam9.depth = 0;
+            cam6.depth = 1;*/
         }
         if (index == 7 && cam7 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(true);
-            cam10.SetActive(false);
-            cam9.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = true;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
 
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam8.depth = 0;
+            cam10.depth = 0;
+            cam9.depth = 0;
+            cam7.depth = 1;*/
         }
         if (index == 8 && cam8 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam8.SetActive(true);
-            cam10.SetActive(false);
-            cam9.SetActive(false);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = true;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam10.depth = 0;
+            cam9.depth = 0;
+            cam8.depth = 1;*/
         }
         if (index == 9 && cam9 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam8.SetActive(false);
-            cam10.SetActive(false);
-            cam9.SetActive(true);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = true;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam8.depth = 0;
+            cam10.depth = 0;
+            cam9.depth = 1;*/
         }
         if (index == 10 && cam10 != null)
         {
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-            cam5.SetActive(false);
-            cam6.SetActive(false);
-            cam7.SetActive(false);
-            cam8.SetActive(false);
-            cam9.SetActive(false);
-            cam10.SetActive(true);
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = true;
+
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam8.depth = 0;
+            cam9.depth = 0;
+            cam10.depth = 1;*/
         }
-        text.text = "cam " + index;
+        text.text = "CAM " + index;
 
     }
 }
