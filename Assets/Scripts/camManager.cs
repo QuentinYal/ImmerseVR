@@ -40,7 +40,19 @@ public class camManager : MonoBehaviour
         
         if (index == 1 && cam1 != null)
         {
-            cam2.depth = 0;
+            cam1.enabled = true;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+            
+            
+            /*cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
             cam5.depth = 0;
@@ -49,11 +61,22 @@ public class camManager : MonoBehaviour
             cam8.depth = 0;
             cam10.depth = 0;
             cam9.depth = 0;
-            cam1.depth = 1;
+            cam1.depth = 1;*/
         }
         if (index == 2 && cam2 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = true;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam3.depth= 0;
             cam4.depth = 0;
             cam5.depth = 0;
@@ -62,11 +85,22 @@ public class camManager : MonoBehaviour
             cam7.depth = 0;
             cam9.depth = 0;
             cam10.depth= 0;
-            cam2.depth = 1;
+            cam2.depth = 1;*/
         }
         if (index == 3 && cam3 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = true;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam4.depth= 0;
             cam5.depth = 0;
@@ -75,12 +109,23 @@ public class camManager : MonoBehaviour
             cam8.depth = 0;
             cam9.depth= 0;
             cam10.depth = 0;
-            cam3.depth = 1;
+            cam3.depth = 1;*/
 
         }
         if (index == 4 && cam4 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = true;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam5.depth = 0;
@@ -89,11 +134,22 @@ public class camManager : MonoBehaviour
             cam8.depth = 0;
             cam10.depth = 0;
             cam9.depth = 0;
-            cam4.depth = 1;
+            cam4.depth = 1;*/
         }
         if (index == 5 && cam5 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = true;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
@@ -102,11 +158,22 @@ public class camManager : MonoBehaviour
             cam8.depth= 0;
             cam10.depth = 0;
             cam9.depth = 0;
-            cam5.depth = 1;
+            cam5.depth = 1;*/
         }
         if (index == 6 && cam6 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = true;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
@@ -115,11 +182,22 @@ public class camManager : MonoBehaviour
             cam8.depth = 0;
             cam10.depth = 0;
             cam9.depth = 0;
-            cam6.depth = 1;
+            cam6.depth = 1;*/
         }
         if (index == 7 && cam7 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = true;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
@@ -128,11 +206,22 @@ public class camManager : MonoBehaviour
             cam8.depth = 0;
             cam10.depth = 0;
             cam9.depth = 0;
-            cam7.depth = 1;
+            cam7.depth = 1;*/
         }
         if (index == 8 && cam8 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = true;
+            cam9.enabled = false;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
@@ -141,11 +230,22 @@ public class camManager : MonoBehaviour
             cam7.depth = 0;
             cam10.depth = 0;
             cam9.depth = 0;
-            cam8.depth = 1;
+            cam8.depth = 1;*/
         }
         if (index == 9 && cam9 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = true;
+            cam10.enabled = false;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
@@ -154,11 +254,22 @@ public class camManager : MonoBehaviour
             cam7.depth = 0;
             cam8.depth = 0;
             cam10.depth = 0;
-            cam9.depth = 1;
+            cam9.depth = 1;*/
         }
         if (index == 10 && cam10 != null)
         {
-            cam1.depth = 0;
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = true;
+
+            /*cam1.depth = 0;
             cam2.depth = 0;
             cam3.depth = 0;
             cam4.depth = 0;
@@ -167,7 +278,7 @@ public class camManager : MonoBehaviour
             cam7.depth = 0;
             cam8.depth = 0;
             cam9.depth = 0;
-            cam10.depth = 1;
+            cam10.depth = 1;*/
         }
         text.text = "CAM " + index;
 
