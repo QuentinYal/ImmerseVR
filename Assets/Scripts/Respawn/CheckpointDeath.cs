@@ -58,6 +58,7 @@ public class CheckpointDeath : MonoBehaviour
         else
         {
             blackScreenScript.blackScreenActive = false;
+            deathTriggerScript.deathTriggered = false;
             lookAtScript.forceCamera = false;
             deathTimer = 0;
         }
