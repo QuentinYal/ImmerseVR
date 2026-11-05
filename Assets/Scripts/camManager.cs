@@ -13,6 +13,7 @@ public class camManager : MonoBehaviour
     public Camera cam8;
     public Camera cam9;
     public Camera cam10;
+    public Camera cam11;
 
     public TextMeshProUGUI text;
 
@@ -29,12 +30,12 @@ public class camManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (index == 1) index = 10;
+            if (index == 1) index = 11;
             else index--;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (index == 10) index = 1;
+            if (index == 11) index = 1;
             else index++;
         }
         
@@ -50,6 +51,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
             
             
             /*cam2.depth = 0;
@@ -75,6 +77,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam3.depth= 0;
@@ -99,6 +102,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -124,6 +128,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -148,6 +153,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -172,6 +178,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -196,6 +203,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -220,6 +228,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = true;
             cam9.enabled = false;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -244,6 +253,7 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = true;
             cam10.enabled = false;
+            cam11.enabled = false;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
@@ -268,6 +278,32 @@ public class camManager : MonoBehaviour
             cam8.enabled = false;
             cam9.enabled = false;
             cam10.enabled = true;
+            cam11.enabled = false;
+
+            /*cam1.depth = 0;
+            cam2.depth = 0;
+            cam3.depth = 0;
+            cam4.depth = 0;
+            cam5.depth = 0;
+            cam6.depth = 0;
+            cam7.depth = 0;
+            cam8.depth = 0;
+            cam9.depth = 0;
+            cam10.depth = 1;*/
+        }
+        if (index == 11 && cam11 != null)
+        {
+            cam1.enabled = false;
+            cam2.enabled = false;
+            cam3.enabled = false;
+            cam4.enabled = false;
+            cam5.enabled = false;
+            cam6.enabled = false;
+            cam7.enabled = false;
+            cam8.enabled = false;
+            cam9.enabled = false;
+            cam10.enabled = false;
+            cam11.enabled = true;
 
             /*cam1.depth = 0;
             cam2.depth = 0;
