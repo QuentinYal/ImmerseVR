@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class SimpleTimer : MonoBehaviour
 {
-    public UnityEvent onTimeUp;
     public bool doTimer;
     public TextMeshProUGUI textBox;
     public float minuteCountStart;
@@ -13,6 +12,7 @@ public class SimpleTimer : MonoBehaviour
     [HideInInspector] public float secondCountCurrent;
     [HideInInspector] public string secondCountDisplay;
     [HideInInspector] public bool endTimer;
+    public UnityEvent onTimeUp;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
