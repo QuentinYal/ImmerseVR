@@ -318,5 +318,9 @@ public class camManager : MonoBehaviour
         }
         text.text = "CAM " + index;
 
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+
+        }
     }
 }
