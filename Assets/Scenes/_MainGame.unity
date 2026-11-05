@@ -37382,7 +37382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3662361654840408291, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_TargetDisplay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3662361654840408291, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_TargetTexture
@@ -37394,7 +37394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5122364283930454342, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_TargetDisplay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7303066105798167638, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: xrRendering
@@ -37406,11 +37406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7417852874518620641, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.51
+      value: -25.649
       objectReference: {fileID: 0}
     - target: {fileID: 7417852874518620641, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.14
+      value: -1.098
       objectReference: {fileID: 0}
     - target: {fileID: 7417852874518620641, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -160974,7 +160974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de3fa01abaeb3442888173442584fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 10
+  velocity: 1
   direction: 4
 --- !u!65 &1152670511
 BoxCollider:
@@ -298493,7 +298493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de3fa01abaeb3442888173442584fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 10
+  velocity: 1
   direction: 4
 --- !u!65 &2081590738
 BoxCollider:
@@ -299600,7 +299600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de3fa01abaeb3442888173442584fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 10
+  velocity: 1
   direction: 4
 --- !u!65 &2092801991
 BoxCollider:
