@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class monsterAIv3 : MonoBehaviour
 {
+    public static monsterAIv3 instance;
+    
     public NavMeshAgent agent;
     public float lingerRadius;
     public GameObject player;
@@ -26,6 +28,8 @@ public class monsterAIv3 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        instance = this;
+        
         agent.speed = normalSpeed;
         StartCoroutine(wander());
     }
@@ -107,7 +111,7 @@ public class monsterAIv3 : MonoBehaviour
         StartCoroutine(toPlayerPosC(location));
     }
 
-    IEnumerator toPlayerPosC(Vector3 loc)
+    public IEnumerator toPlayerPosC(Vector3 loc)
     {
         agent.SetDestination(loc);
         agent.speed = huntingSpeed;
@@ -115,6 +119,6 @@ public class monsterAIv3 : MonoBehaviour
         yield return new WaitUntil(() => agent.remainingDistance < 0.1f);
         agent.speed = normalSpeed;
 
-        StartCoroutine(Linger(10));
+        StartCoroutine(Linger(15));
     }
 }
