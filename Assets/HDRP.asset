@@ -117,8 +117,8 @@ MonoBehaviour:
     hdShadowInitParams:
       maxShadowRequests: 128
       directionalShadowsDepthBits: 32
-      punctualShadowFilteringQuality: 1
-      directionalShadowFilteringQuality: 1
+      punctualShadowFilteringQuality: 0
+      directionalShadowFilteringQuality: 0
       areaShadowFilteringQuality: 0
       punctualLightShadowAtlas:
         shadowAtlasResolution: 4096
@@ -336,7 +336,7 @@ MonoBehaviour:
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   availableMaterialQualityLevels: -1
-  m_DefaultMaterialQualityLevel: 4
+  m_DefaultMaterialQualityLevel: 2
   diffusionProfileSettings: {fileID: 0}
   m_VolumeProfile: {fileID: 0}
   virtualTexturingSettings:
