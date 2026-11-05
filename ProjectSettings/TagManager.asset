@@ -13,6 +13,7 @@ TagManager:
   - GreenBall
   - BlueBall
   - Button
+  - roof
   layers:
   - Default
   - TransparentFX

@@ -150087,7 +150087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4342622241128079172, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.02
+      value: 85.080025
       objectReference: {fileID: 0}
     - target: {fileID: 4342622241128079172, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -150095,7 +150095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4342622241128079172, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -88.871
+      value: -60.870987
       objectReference: {fileID: 0}
     - target: {fileID: 4342622241128079172, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -150360,7 +150360,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5971809753051674258, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
-      insertIndex: 8
+      insertIndex: 6
+      addedObject: {fileID: 1157613506}
+    - targetCorrespondingSourceObject: {fileID: 5971809753051674258, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+      insertIndex: 9
       addedObject: {fileID: 1157613505}
   m_SourcePrefab: {fileID: 100100000, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
 --- !u!1 &1157613502 stripped
@@ -150389,6 +150392,19 @@ MonoBehaviour:
   deathTimer: 0
   source: {fileID: 1302917304}
   jumpscare: {fileID: 8300000, guid: d59397a725b2de44987f687bbb76acb0, type: 3}
+--- !u!114 &1157613506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157613502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e408867b5c74e4b9753e7b166447df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &1157883617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4342125316248730876, guid: b56e5b388a9b39d4ea15d6c2114b5842, type: 3}
@@ -288709,7 +288725,7 @@ GameObject:
   - component: {fileID: 5197235385917145295}
   m_Layer: 0
   m_Name: moveCeiling
-  m_TagString: Untagged
+  m_TagString: roof
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404017,7 +404033,7 @@ GameObject:
   - component: {fileID: 6107431682809159025}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: roof
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
