@@ -188057,7 +188057,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.76643366, y: 2.453976, z: 0.7081005}
+  m_Size: {x: 1.8, y: 2.453976, z: 1.8}
   m_Center: {x: 0.11225604, y: 0.79, z: 0.08367165}
 --- !u!195 &1302917299
 NavMeshAgent:
@@ -225925,7 +225925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceCamera: 0
-  rotationSpeed: 5
+  rotationSpeed: 2
   pivotHeight: 1.5
   targetMonster: {fileID: 1302917300}
   cameraNormal: {fileID: 7084629895407314940}
@@ -225971,9 +225971,9 @@ MonoBehaviour:
     - {x: -200, y: 200}
     - {x: -21.02, y: -88.871}
   deathTimer: 0
-  timeUntilFadeIn: 2
-  timeUntilRespawn: 4
-  timeUntilFadeOut: 5
+  timeUntilFadeIn: 3
+  timeUntilRespawn: 5
+  timeUntilFadeOut: 6
 --- !u!4 &1548572839
 Transform:
   m_ObjectHideFlags: 0

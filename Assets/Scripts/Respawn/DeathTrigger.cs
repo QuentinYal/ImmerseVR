@@ -4,6 +4,11 @@ public class DeathTrigger : MonoBehaviour
 {
     public bool deathTriggered = false;
 
+    private void Update()
+    {
+
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,10 +17,6 @@ public class DeathTrigger : MonoBehaviour
         if (other.CompareTag("monster"))
         {
             deathTriggered = true;
-        }
-        else
-        {
-             deathTriggered = false;
         }
     }
 }
