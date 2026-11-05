@@ -44,6 +44,7 @@ public class IntroPuzzle : MonoBehaviour
             puzzleSolved = true;
             colorChange.color = new Color32(185, 255, 200, 255); //green
             Debug.Log("Puzzle Solved!");
+            slideDeur1.instance.puzzleDoorOpen();
         }
     }
 }
