@@ -6,9 +6,11 @@ public class DeathTrigger : MonoBehaviour
     public float deathTimer = 0f;
     public AudioSource source;
     public AudioClip jumpscare;
+    public Animator monsterAnimator;
 
     private void Update()
     {
+
         if (deathTriggered)
         {
             deathTimer += Time.deltaTime;

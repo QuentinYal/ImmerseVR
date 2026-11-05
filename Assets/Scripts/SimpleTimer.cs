@@ -67,6 +67,7 @@ public class SimpleTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(20f);
         onTimeUp.Invoke();
+        doTimer = true;
     }
 
     public void SwapBoolean(bool a)
