@@ -13382,6 +13382,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4342125316248730876, guid: b56e5b388a9b39d4ea15d6c2114b5842, type: 3}
   m_PrefabInstance: {fileID: 741102360}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &99776254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1578418895}
+    m_Modifications:
+    - target: {fileID: 7065475255921888458, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_Name
+      value: CeilingLight (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 81.97989
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 81.97989
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 81.97989
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.974
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9221474
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+--- !u!4 &99776255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
+  m_PrefabInstance: {fileID: 99776254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &100146453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26731,7 +26805,6 @@ GameObject:
   m_Component:
   - component: {fileID: 192778637}
   - component: {fileID: 192778640}
-  - component: {fileID: 192778639}
   - component: {fileID: 192778638}
   - component: {fileID: 192778641}
   - component: {fileID: 192778642}
@@ -26774,7 +26847,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -26896,14 +26969,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &192778639
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192778636}
-  m_Enabled: 1
 --- !u!20 &192778640
 Camera:
   m_ObjectHideFlags: 0
@@ -37268,9 +37333,13 @@ PrefabInstance:
       propertyPath: allowDynamicResolution
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2972343767888712631, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
+      propertyPath: volumeLayerMask.m_Bits
+      value: 12288
+      objectReference: {fileID: 0}
     - target: {fileID: 3662361654840408291, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_TargetDisplay
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3662361654840408291, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_TargetTexture
@@ -37282,11 +37351,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5122364283930454342, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_TargetDisplay
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7303066105798167638, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: xrRendering
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303066105798167638, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
+      propertyPath: volumeLayerMask.m_Bits
+      value: 12288
       objectReference: {fileID: 0}
     - target: {fileID: 7417852874518620641, guid: ae789ad601c1b51489889f8e89d55e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59580,7 +59653,6 @@ GameObject:
   m_Component:
   - component: {fileID: 421913199}
   - component: {fileID: 421913202}
-  - component: {fileID: 421913201}
   - component: {fileID: 421913200}
   - component: {fileID: 421913203}
   - component: {fileID: 421913204}
@@ -59623,7 +59695,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -59745,14 +59817,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &421913201
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421913198}
-  m_Enabled: 1
 --- !u!20 &421913202
 Camera:
   m_ObjectHideFlags: 0
@@ -129505,7 +129569,6 @@ GameObject:
   m_Component:
   - component: {fileID: 939859817}
   - component: {fileID: 939859820}
-  - component: {fileID: 939859819}
   - component: {fileID: 939859818}
   - component: {fileID: 939859821}
   - component: {fileID: 939859822}
@@ -129548,7 +129611,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -129670,14 +129733,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &939859819
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939859816}
-  m_Enabled: 1
 --- !u!20 &939859820
 Camera:
   m_ObjectHideFlags: 0
@@ -135712,7 +135767,6 @@ GameObject:
   m_Component:
   - component: {fileID: 982257406}
   - component: {fileID: 982257409}
-  - component: {fileID: 982257408}
   - component: {fileID: 982257407}
   - component: {fileID: 982257410}
   - component: {fileID: 982257411}
@@ -135755,7 +135809,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -135877,14 +135931,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &982257408
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982257405}
-  m_Enabled: 1
 --- !u!20 &982257409
 Camera:
   m_ObjectHideFlags: 0
@@ -161590,6 +161636,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1351250189506826337, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+      propertyPath: volumeLayerMask.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 1431655882440056869, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -161601,6 +161651,10 @@ PrefabInstance:
     - target: {fileID: 1655673679632384137, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700522303098179785, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1836893490934906856, guid: 54f53e1714734ef4baeb550c2bd6d4fb, type: 3}
       propertyPath: m_Layer
@@ -169942,7 +169996,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1214251684}
   - component: {fileID: 1214251687}
-  - component: {fileID: 1214251686}
   - component: {fileID: 1214251685}
   - component: {fileID: 1214251688}
   - component: {fileID: 1214251689}
@@ -169985,7 +170038,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -170107,14 +170160,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1214251686
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214251683}
-  m_Enabled: 1
 --- !u!20 &1214251687
 Camera:
   m_ObjectHideFlags: 0
@@ -181279,6 +181324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NightEnviroment
       objectReference: {fileID: 0}
+    - target: {fileID: 2532186371637675759, guid: e82c9e9d0259a6b48a24c01dd43dfdea, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8229346911452650454, guid: e82c9e9d0259a6b48a24c01dd43dfdea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65.75051
@@ -184851,6 +184900,14 @@ PrefabInstance:
     - target: {fileID: 7773348903405605206, guid: 4c6e2e915e5f1074d994dfdce3e7b290, type: 3}
       propertyPath: m_Name
       value: NightLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773348903405605206, guid: 4c6e2e915e5f1074d994dfdce3e7b290, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773348903405605206, guid: 4c6e2e915e5f1074d994dfdce3e7b290, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -190614,7 +190671,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1350931309}
   - component: {fileID: 1350931312}
-  - component: {fileID: 1350931311}
   - component: {fileID: 1350931310}
   - component: {fileID: 1350931313}
   - component: {fileID: 1350931314}
@@ -190657,7 +190713,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -190779,14 +190835,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1350931311
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350931308}
-  m_Enabled: 1
 --- !u!20 &1350931312
 Camera:
   m_ObjectHideFlags: 0
@@ -197618,7 +197666,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1394046104}
   - component: {fileID: 1394046107}
-  - component: {fileID: 1394046106}
   - component: {fileID: 1394046105}
   - component: {fileID: 1394046108}
   - component: {fileID: 1394046109}
@@ -197661,7 +197708,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -197783,14 +197830,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1394046106
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394046103}
-  m_Enabled: 1
 --- !u!20 &1394046107
 Camera:
   m_ObjectHideFlags: 0
@@ -217195,7 +217234,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1529747074}
   - component: {fileID: 1529747077}
-  - component: {fileID: 1529747076}
   - component: {fileID: 1529747075}
   - component: {fileID: 1529747078}
   - component: {fileID: 1529747079}
@@ -217238,7 +217276,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -217360,14 +217398,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1529747076
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529747073}
-  m_Enabled: 1
 --- !u!20 &1529747077
 Camera:
   m_ObjectHideFlags: 0
@@ -225426,6 +225456,7 @@ Transform:
   - {fileID: 1854628733}
   - {fileID: 2074012893}
   - {fileID: 1375295627}
+  - {fileID: 99776255}
   - {fileID: 1015138398}
   - {fileID: 1402075365}
   - {fileID: 164544757}
@@ -238629,6 +238660,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7585835160532751984, guid: e5a179bd077d01444a73a2358d5548c0, type: 3}
   m_PrefabInstance: {fileID: 1671880181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1672444766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1416207731940447156, guid: 8591f34c56d3f8b47ae5620559057ed3, type: 3}
+  m_PrefabInstance: {fileID: 2293575075303670575}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1672452592 stripped
 Transform:
@@ -259585,7 +259621,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1832627307}
   - component: {fileID: 1832627310}
-  - component: {fileID: 1832627309}
   - component: {fileID: 1832627308}
   - component: {fileID: 1832627311}
   - component: {fileID: 1832627312}
@@ -259628,7 +259663,7 @@ MonoBehaviour:
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   volumeAnchorOverride: {fileID: 0}
   antialiasing: 0
   SMAAQuality: 2
@@ -259750,14 +259785,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1832627309
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832627306}
-  m_Enabled: 1
 --- !u!20 &1832627310
 Camera:
   m_ObjectHideFlags: 0
@@ -308533,16 +308560,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2558774258151433121, guid: 8591f34c56d3f8b47ae5620559057ed3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1416207731940447156, guid: 8591f34c56d3f8b47ae5620559057ed3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2293575075303670577}
   m_SourcePrefab: {fileID: 100100000, guid: 8591f34c56d3f8b47ae5620559057ed3, type: 3}
 --- !u!4 &2293575075303670576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1796005795457435918, guid: 8591f34c56d3f8b47ae5620559057ed3, type: 3}
   m_PrefabInstance: {fileID: 2293575075303670575}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2293575075303670577
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672444766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &2307800184440331102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6515278719126764238, guid: 948e9c1300e4bba44815c05039dff2f9, type: 3}
