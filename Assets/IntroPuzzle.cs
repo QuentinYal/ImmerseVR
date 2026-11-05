@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 
 public class IntroPuzzle : MonoBehaviour
@@ -15,7 +16,8 @@ public class IntroPuzzle : MonoBehaviour
     string correctCode = "1234";
     [SerializeField]
     bool puzzleSolved = false;
-
+    [SerializeField]
+    SimpleTimer SimpleTimerScript; // Add this line to declare onTimeUp
 
     private void Start()
     {
@@ -35,7 +37,7 @@ public class IntroPuzzle : MonoBehaviour
         codeTyped += button.name;
         if (codeTyped.Length > 4)
         {
-        codeTyped = null;
+            codeTyped = null;
         }
         InputCode.text = codeTyped;
 
@@ -45,6 +47,7 @@ public class IntroPuzzle : MonoBehaviour
             colorChange.color = new Color32(185, 255, 200, 255); //green
             Debug.Log("Puzzle Solved!");
             slideDeur1.instance.puzzleDoorOpen();
+            SimpleTimerScript.doTimer = true;
         }
     }
 }
