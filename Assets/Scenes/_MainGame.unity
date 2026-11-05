@@ -42347,7 +42347,19 @@ MonoBehaviour:
   endTimer: 0
   onTimeUp:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7359779689307691493}
+        m_TargetAssemblyTypeName: slideDeur1, Assembly-CSharp
+        m_MethodName: puzzleDoorClose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &325681309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334883,7 +334895,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2217558964165807312}
-  - component: {fileID: 3100210180044418487}
   - component: {fileID: 7359779689307691493}
   - component: {fileID: 7359779689307691492}
   m_Layer: 0
@@ -349834,28 +349845,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5176242896047938704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3100210180044418487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166771145947636037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aaff896968b99f499bc6f3734958f50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door1: {fileID: 2129001447239866526}
-  door2: {fileID: 6001603209480630577}
-  closedpos1: 0
-  closedpos2: 0
-  openpos1: -0.479
-  openpos2: 0.503
-  lerpDuration: 3
-  source: {fileID: 7359779689307691492}
-  openClip: {fileID: 8300000, guid: 5a09bfdab52cf7f4fb4dd924cc421047, type: 3}
-  closeClip: {fileID: 8300000, guid: 6b369292ce7320c42933415d33901e3f, type: 3}
 --- !u!4 &3100813254175867400
 Transform:
   m_ObjectHideFlags: 0

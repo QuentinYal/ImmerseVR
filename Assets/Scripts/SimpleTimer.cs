@@ -26,6 +26,7 @@ public class SimpleTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (doTimer && !(minuteCountCurrent == 0 && secondCountCurrent == 0))
         {
             if (secondCountCurrent <= 0)
